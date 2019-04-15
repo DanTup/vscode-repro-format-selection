@@ -10,6 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onLanguage:foo"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -19,6 +20,14 @@
 				"title": "Hello World"
 			}
 		],
+		"languages": [
+			{
+				"id": "foo",
+				"extensions": [
+					".foo"
+				]
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
